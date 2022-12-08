@@ -5,11 +5,17 @@ body, input, select, button {
     font-size: 0.875rem;
 }
 
-#body1 {
+body {
     font-family: Inter, sans-serif;
     color: #5c5f62;
     transition: background 0.5s, color 0.5s;
 }
+
+.darkThemeBody {
+    background: #0d1213;
+    color: #d7d7db;
+}
+
 
 button {
     border: none;
