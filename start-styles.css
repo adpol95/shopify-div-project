@@ -8,153 +8,29 @@ body, input, select, button {
 body {
     font-family: Inter, sans-serif;
     color: #5c5f62;
-    transition: background 0.5s, color 0.5s;
+    transition: background 0.3s, color 0.3s;
+    height: 2000px;
 }
 
 .darkThemeBody {
     background: #0d1213;
     color: #d7d7db;
+    transition: background 0.3s, color 0.3s;
 }
 
+.darkTheme,
+.whiteTheme {
+    transition: opacity 0.3s;
+}
+
+.darkTheme {
+    opacity: 0;
+    position: absolute;
+}
 
 button {
     border: none;
     background: none;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 3.063rem;
-    display: flex;
-    font-size: 0.875rem;
-    font-weight: 400;
-    padding: 0 1rem;
-}
-
-.leftSection,
-.middleSection,
-.rightSection {
-    display: flex;
-    align-items: center;
-}
-
-.leftSection {
-    flex: 0.46;
-}
-
-.middleSection {
-    flex: 1.5;
-}
-
-.rightSection {
-    flex: 0.98;
-}
-
-.leftSection img {
-    height: 1.7em;
-    cursor: pointer;
-}
-
-.middleSection div {
-    margin: 0 .8em;
-    cursor: pointer;
-}
-
-.apiArea button img {
-    width: 0.8em;
-    cursor: pointer;
-}
-
-.apiArea,
-.navArea {
-    display: flex;
-    align-items: center;
-}
-
-.dot {
-    width: 0.25em;
-    margin: 0 .3em;
-}
-
-.apiArea div {
-    margin: 0;
-}
-
-.apiArea button {
-    margin-top: 4px;
-}
-
-#searchArea {
-    display: flex;
-    align-items: center;
-    border: 1px #6d7175 solid;
-    border-radius: 0.6em;
-    box-shadow: inset 0 2px 1px rgba(92, 95, 98, 0.4);
-    padding: 0.25em 0.3em;
-    background: #fafbfb;
-    margin-right: 0.8em;
-    cursor: pointer;
-    transition: background 0.5s;
-}
-
-#searchArea button {
-    padding: 0;
     display: flex;
 }
 
-#searchArea img,
-.navArea img {
-    cursor: pointer;
-    width: 1.3em;
-}
-
-.searchText {
-    padding-right: 2em;
-    padding-left: 0.3em;
-}
-
-#dividerArea {
-    box-shadow: inset 0 1px 1px rgba(92, 95, 98, 0.4), inset 0 -1px 1px rgba(92, 95, 98, 0.4);
-    border: 1px solid #6d7175;
-    border-radius: 4px;
-    height: 1.3em;
-    padding: 0 0.48em;
-}
-
-.rightSection #searchArea {
-    color: #5c5f62;
-}
-
-.navArea div,
-.navArea button {
-    cursor: pointer;
-    margin: 0 0.8em;
-    padding: 0;
-}
-
-.navSections div:hover,
-.navArea div:hover {
-}
-
-/*#moonImg,*/
-/*#sunImg,*/
-/*#mainLogoBlack,*/
-/*#mainLogoWhite,*/
-/*#arrowGray,*/
-/*#arrowGrayWhite,*/
-/*#searchingLogo,*/
-/*#searchingLogoWhite {*/
-/*    transition: opacity 100s ease-out;*/
-/*}*/
-
-/*#sunImg,*/
-/*#mainLogoWhite,*/
-/*#arrowGrayWhite,*/
-/*#searchingLogoWhite {*/
-/*    opacity: 0;*/
-/*    overflow: hidden;*/
-/*    height: 0;*/
-/*}*/
